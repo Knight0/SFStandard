@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Summary__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;£&quot; &amp; IF(Cost__c &lt;1,&quot;0&quot;,&quot;&quot;) &amp; TEXT( ROUND( Cost__c ,2) ) &amp; &quot; for &quot; &amp; IF(Units__c &lt;1,&quot;0&quot;,&quot;&quot;) &amp;  TEXT( ROUND(Units__c,2) ) &amp; &quot; units (£&quot; &amp; IF(Unit_Price__c &lt;1,&quot;0&quot;,&quot;&quot;) &amp;  TEXT(ROUND(Unit_Price__c,2)) &amp; &quot;/unit) of &quot; &amp;  Share_Class__r.Name</formula>
+    <label>Summary</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

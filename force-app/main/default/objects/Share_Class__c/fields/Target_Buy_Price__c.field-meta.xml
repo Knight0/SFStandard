@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Buy_Price__c</fullName>
+    <formula>((MFLOOR( 200 / (Average_Unit_Price__c * 0.85)) * Average_Unit_Price__c) - 12) / MFLOOR( 200 / (Average_Unit_Price__c * 0.85))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Target Buy Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>
