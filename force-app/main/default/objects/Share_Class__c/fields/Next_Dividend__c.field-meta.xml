@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Dividend__c</fullName>
+    <formula>ADDMONTHS(Last_Dividend__c,  12 / No_Dividends_Annually__c)</formula>
+    <label>Next Dividend</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

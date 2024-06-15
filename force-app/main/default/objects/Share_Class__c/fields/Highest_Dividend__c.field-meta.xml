@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Highest_Dividend__c</fullName>
+    <label>Highest Dividend</label>
+    <summarizedField>Dividend__c.Dividend__c</summarizedField>
+    <summaryForeignKey>Dividend__c.Share_Class__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
