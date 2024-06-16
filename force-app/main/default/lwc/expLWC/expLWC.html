@@ -1,0 +1,21 @@
+<template>
+    <lightning-card>
+        <lightning-button variant="brand"
+            label="Add Security"
+            onclick={handleClick}
+            class="slds-var-m-left_x-small">
+        </lightning-button>
+        <template if:true={securities.data}>
+            <lightning-datatable
+                key-field="Id"
+                data={securities.data}
+                columns={columns}
+                sorted-by={sortBy}
+                sorted-direction={sortDirection}
+                onsort={doSorting}
+                hide-checkbox-column="true"
+            >
+            </lightning-datatable>
+        </template>
+    </lightning-card>    
+</template>
